@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MlkPocari" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/qcuci_teal_primary</item>
+        <item name="colorPrimaryVariant">@color/qcuci_teal_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/qcuci_gold</item>
+        <item name="colorSecondaryVariant">@color/qcuci_gold_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/qcuci_teal_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/qcuci_teal_dark</item>
+
+        <!-- Custom font family -->
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/qcuci_teal_light</item>
+    </style>
+
+</resources>

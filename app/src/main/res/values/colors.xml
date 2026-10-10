@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Qcuci Management Color Palette -->
+    <color name="qcuci_teal_primary">#187A93</color>
+    <color name="qcuci_teal_dark">#11596C</color>
+    <color name="qcuci_teal_light">#EBF5F8</color>
+    <color name="qcuci_teal_accent">#209CB2</color>
+
+    <color name="qcuci_gold">#D89C26</color>
+    <color name="qcuci_gold_dark">#B57F18</color>
+    <color name="qcuci_gold_light">#FFF8E7</color>
+
+    <color name="qcuci_bg">#F4F8F9</color>
+    <color name="qcuci_text_dark">#0F3843</color>
+    <color name="qcuci_text_secondary">#5C7880</color>
+    <color name="white">#FFFFFF</color>
+</resources>

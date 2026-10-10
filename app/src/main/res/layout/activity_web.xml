@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/qcuci_bg">
+
+    <!-- Toolbar for WebActivity (Includes Back Button) -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarWeb"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/qcuci_teal_primary"
+        android:elevation="4dp"
+        app:title="@string/title_web"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/white"
+        app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        android:progressBackgroundTint="@color/qcuci_teal_light"
+        android:progressTint="@color/qcuci_gold" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

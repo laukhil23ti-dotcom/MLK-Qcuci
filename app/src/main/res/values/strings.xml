@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">qcuci Management</string>
+    <string name="title_main">qcuci Management</string>
+    <string name="title_detail">Detail Layanan Qcuci</string>
+    <string name="title_web">Website Qcuci</string>
+    <string name="title_calculator">Kalkulator Biaya Laundry</string>
+    <string name="title_login">Login Qcuci</string>
+    <string name="title_developer">Profil Developer</string>
+
+    <string name="btn_explore">EXPLORE LAYANAN</string>
+    <string name="btn_website">KUNJUNGI WEBSITE</string>
+    <string name="btn_calculator">KALKULATOR BIAYA LAUNDRY</string>
+    <string name="btn_developer">PROFIL DEVELOPER</string>
+    <string name="btn_logout">LOGOUT / KELUAR</string>
+
+    <string name="desc_logo">Logo Qcuci Management</string>
+    <string name="brand_qcuci">qcuci MANAGEMENT</string>
+    <string name="tagline_qcuci">Smart Laundry System</string>
+    <string name="desc_main">Aplikasi pengelolaan laundry modern untuk manajemen transaksi cuci kiloan &amp; satuan, pemantauan status cuci, dan manajemen pelanggan secara efisien.</string>
+    <string name="footer_qcuci">qcuci Management • 2026</string>
+
+    <string name="header_services">Layanan &amp; Fitur Unggulan</string>
+    <string name="service_kiloan_title">1. Cuci Kiloan &amp; Satuan</string>
+    <string name="service_kiloan_desc">Pencatatan jenis pakaian, berat/jumlah item, paket express, dan estimasi selesai otomatis.</string>
+    <string name="service_tracking_title">2. Tracking Status Cuci</string>
+    <string name="service_tracking_desc">Pantau proses laundry secara riil dari Penerimaan, Pencucian, Pengeringan, Setrika, hingga Siap Ambil.</string>
+    <string name="service_pos_title">3. Manajemen Kasir &amp; Nota</string>
+    <string name="service_pos_desc">Cetak nota digital atau struk thermal untuk pelanggan dengan rincian biaya transparan.</string>
+
+    <string name="calc_choose_service">Pilih Jenis Layanan:</string>
+    <string name="service_reguler">Cuci Kiloan Reguler (Rp 6.000 / kg)</string>
+    <string name="service_express">Cuci Kiloan Express (Rp 10.000 / kg)</string>
+    <string name="service_dry_clean">Dry Cleaning / Satuan (Rp 15.000 / item)</string>
+    <string name="service_bedcover">Cuci Bedcover (Rp 25.000 / item)</string>
+
+    <string name="calc_input_weight">Berat (kg) / Jumlah Item:</string>
+    <string name="calc_weight_hint">Masukkan jumlah (contoh: 3)</string>
+
+    <string name="calc_addons">Layanan Tambahan:</string>
+    <string name="addon_parfum">Extra Parfum (+ Rp 2.000)</string>
+    <string name="addon_softener">Pelembut Softener (+ Rp 3.000)</string>
+    <string name="addon_anti_noda">Treatment Anti Noda (+ Rp 5.000)</string>
+
+    <string name="calc_btn_calculate">HITUNG BIAYA</string>
+    <string name="calc_result_header">Rincian Estimasi Biaya</string>
+    <string name="calc_total_label">Total Harga:</string>
+    <string name="calc_empty_warning">Masukkan berat atau jumlah item terlebih dahulu!</string>
+
+    <string name="login_header">Selamat Datang di Qcuci</string>
+    <string name="login_subtitle">Silahkan masuk untuk mengelola sistem laundry</string>
+    <string name="hint_username">Username / Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">MASUK / LOGIN</string>
+    <string name="login_failed">Username atau Password salah!</string>
+    <string name="login_empty">Username dan Password wajib diisi!</string>
+    <string name="login_demo_hint">Demo Akun: admin / admin123</string>
+
+    <string name="dev_title_val">Android Software Engineer</string>
+    <string name="dev_name_label">Nama Lengkap:</string>
+    <string name="dev_name_val">Muhammad Laukhil</string>
+    <string name="dev_sosmed_label">Media Sosial &amp; Kontak:</string>
+    <string name="dev_sosmed_val">GitHub: @laukhil-dev • IG: @laukhil_qcuci</string>
+    <string name="dev_hobi_label">Hobi:</string>
+    <string name="dev_hobi_val">Pengembangan Android, Desain UI/UX, &amp; Problem Solving</string>
+    <string name="dev_strength_label">Kekuatan Terbesar:</string>
+    <string name="dev_strength_val">Adaptabilitas tinggi, pemahaman arsitektur software, serta kegigihan dalam memecahkan tantangan teknis kompleks.</string>
+
+    <string name="result_service_format">Layanan: %1$s (%2$s %3$s)</string>
+    <string name="result_addons_format">Tambahan: %1$s</string>
+    <string name="result_addons_none">Tidak ada</string>
+
+    <string name="web_loading">Memuat halaman web&#8230;</string>
+</resources>
