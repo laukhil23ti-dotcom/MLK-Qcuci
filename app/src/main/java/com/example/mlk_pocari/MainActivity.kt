@@ -1,59 +1,73 @@
 package com.example.mlk_pocari
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var prefManager: PrefManager
+    private lateinit var toolbar: MaterialToolbar
+    private lateinit var bottomNavigation: BottomNavigationView
+
+    private val homeFragment = HomeFragment()
+    private val servicesFragment = ServicesFragment()
+    private val featureContainerFragment = FeatureContainerFragment()
+    private val profileFragment = ProfileFragment()
+
+    private var activeFragment: Fragment = homeFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        prefManager = PrefManager(this)
-
-        val toolbar = findViewById<MaterialToolbar>(R.id.toolbarMain)
+        toolbar = findViewById(R.id.toolbarMain)
         setSupportActionBar(toolbar)
 
-        val btnMyProject = findViewById<Button>(R.id.btnMyProject)
-        val btnCalculator = findViewById<Button>(R.id.btnCalculator)
-        val btnWebsite = findViewById<Button>(R.id.btnWebsite)
-        val btnDeveloper = findViewById<Button>(R.id.btnDeveloper)
-        val btnLogout = findViewById<Button>(R.id.btnLogout)
+        bottomNavigation = findViewById(R.id.bottom_navigation)
 
-        btnMyProject.setOnClickListener {
-            val intent = Intent(this, DetailActivity::class.java)
-            startActivity(intent)
+        // Setup Fragment Container with FragmentManager (Avoid recreating fragments)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction().apply {
+                add(R.id.fragment_container, profileFragment, "4").hide(profileFragment)
+                add(R.id.fragment_container, featureContainerFragment, "3").hide(featureContainerFragment)
+                add(R.id.fragment_container, servicesFragment, "2").hide(servicesFragment)
+                add(R.id.fragment_container, homeFragment, "1")
+            }.commit()
         }
 
-        btnCalculator.setOnClickListener {
-            val intent = Intent(this, CalculatorActivity::class.java)
-            startActivity(intent)
-        }
-
-        btnWebsite.setOnClickListener {
-            val intent = Intent(this, WebActivity::class.java)
-            startActivity(intent)
-        }
-
-        btnDeveloper.setOnClickListener {
-            val intent = Intent(this, DeveloperActivity::class.java)
-            startActivity(intent)
-        }
-
-        btnLogout.setOnClickListener {
-            prefManager.logout()
-            Toast.makeText(this, "Berhasil logout", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, LoginActivity::class.java).apply {
-                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    switchFragment(homeFragment, getString(R.string.title_main))
+                    true
+                }
+                R.id.nav_services -> {
+                    switchFragment(servicesFragment, getString(R.string.title_detail))
+                    true
+                }
+                R.id.nav_features -> {
+                    switchFragment(featureContainerFragment, getString(R.string.sub_frag_title))
+                    true
+                }
+                R.id.nav_profile -> {
+                    switchFragment(profileFragment, getString(R.string.title_developer))
+                    true
+                }
+                else -> false
             }
-            startActivity(intent)
-            finish()
+        }
+    }
+
+    private fun switchFragment(targetFragment: Fragment, title: String) {
+        if (activeFragment != targetFragment) {
+            supportFragmentManager.beginTransaction()
+                .hide(activeFragment)
+                .show(targetFragment)
+                .commit()
+            activeFragment = targetFragment
+            supportActionBar?.title = title
         }
     }
 }

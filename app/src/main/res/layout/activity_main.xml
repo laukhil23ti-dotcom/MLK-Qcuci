@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/qcuci_bg">
 
-    <!-- AppBarLayout with scroll flags for hide-on-scroll-down & show-on-scroll-up -->
+    <!-- AppBarLayout with scroll flags for auto-hide/show toolbar on scroll -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,200 +23,32 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- NestedScrollView linked to AppBarLayout scrolling behavior -->
+    <!-- Main Fragment Container for Bottom Navigation -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
+        android:layout_marginBottom="56dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout
+        <FrameLayout
+            android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
-            android:padding="20dp">
-
-            <!-- Logo Section inside styled card -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="@color/white"
-                app:strokeColor="@color/qcuci_teal_light"
-                app:strokeWidth="1dp">
-
-                <ImageView
-                    android:id="@+id/imgLogoMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp"
-                    android:padding="16dp"
-                    android:src="@drawable/qcuci"
-                    android:contentDescription="@string/desc_logo"
-                    android:scaleType="fitCenter" />
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <!-- Main Content Card -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="6dp"
-                app:cardBackgroundColor="@color/white"
-                app:strokeColor="@color/qcuci_teal_light"
-                app:strokeWidth="1dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center_horizontal"
-                    android:padding="24dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/brand_qcuci"
-                        android:textColor="@color/qcuci_teal_primary"
-                        android:textSize="22sp"
-                        android:fontFamily="sans-serif-black"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tagline_qcuci"
-                        android:textColor="@color/qcuci_gold_dark"
-                        android:textSize="14sp"
-                        android:fontFamily="sans-serif-medium"
-                        android:textStyle="bold"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginBottom="16dp" />
-
-                    <View
-                        android:layout_width="60dp"
-                        android:layout_height="3dp"
-                        android:background="@color/qcuci_gold"
-                        android:layout_marginBottom="16dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/desc_main"
-                        android:textColor="@color/qcuci_text_dark"
-                        android:textSize="14sp"
-                        android:gravity="center"
-                        android:lineSpacingExtra="4dp"
-                        android:layout_marginBottom="24dp" />
-
-                    <!-- Button 1: Detail Page -->
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnMyProject"
-                        android:layout_width="match_parent"
-                        android:layout_height="54dp"
-                        android:text="@string/btn_explore"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="12dp"
-                        app:backgroundTint="@color/qcuci_teal_primary"
-                        app:icon="@android:drawable/ic_menu_info_details"
-                        app:iconGravity="textStart"
-                        app:iconPadding="8dp"
-                        app:iconTint="@color/white"
-                        android:layout_marginBottom="12dp" />
-
-                    <!-- Button 2: Calculator Page -->
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnCalculator"
-                        android:layout_width="match_parent"
-                        android:layout_height="54dp"
-                        android:text="@string/btn_calculator"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="12dp"
-                        app:backgroundTint="@color/qcuci_gold"
-                        app:icon="@android:drawable/ic_menu_manage"
-                        app:iconGravity="textStart"
-                        app:iconPadding="8dp"
-                        app:iconTint="@color/white"
-                        android:layout_marginBottom="12dp" />
-
-                    <!-- Button 3: Website Page -->
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnWebsite"
-                        android:layout_width="match_parent"
-                        android:layout_height="54dp"
-                        android:text="@string/btn_website"
-                        android:textColor="@color/qcuci_teal_primary"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="12dp"
-                        app:backgroundTint="@color/qcuci_teal_light"
-                        app:strokeColor="@color/qcuci_teal_primary"
-                        app:strokeWidth="1.5dp"
-                        app:icon="@android:drawable/ic_menu_compass"
-                        app:iconGravity="textStart"
-                        app:iconPadding="8dp"
-                        app:iconTint="@color/qcuci_teal_primary"
-                        android:layout_marginBottom="12dp" />
-
-                    <!-- Button 4: Developer Profile -->
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnDeveloper"
-                        android:layout_width="match_parent"
-                        android:layout_height="54dp"
-                        android:text="@string/btn_developer"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="12dp"
-                        app:backgroundTint="@color/qcuci_teal_dark"
-                        app:icon="@android:drawable/ic_menu_myplaces"
-                        app:iconGravity="textStart"
-                        app:iconPadding="8dp"
-                        app:iconTint="@color/white"
-                        android:layout_marginBottom="12dp" />
-
-                    <!-- Button 5: Logout -->
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnLogout"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:text="@string/btn_logout"
-                        android:textColor="#D32F2F"
-                        android:textSize="13sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="12dp"
-                        app:backgroundTint="#FFEBEE"
-                        app:strokeColor="#D32F2F"
-                        app:strokeWidth="1dp"
-                        app:icon="@android:drawable/ic_menu_close_clear_cancel"
-                        app:iconGravity="textStart"
-                        app:iconPadding="8dp"
-                        app:iconTint="#D32F2F" />
-
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/footer_qcuci"
-                android:textColor="@color/qcuci_text_secondary"
-                android:textSize="12sp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="12dp" />
-
-        </LinearLayout>
+            android:layout_height="wrap_content" />
 
     </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:elevation="8dp"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/qcuci_teal_primary"
+        app:itemTextColor="@color/qcuci_teal_primary"
+        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -8,6 +8,11 @@
     <string name="title_login">Login Qcuci</string>
     <string name="title_developer">Profil Developer</string>
 
+    <string name="nav_home">Beranda</string>
+    <string name="nav_services">Layanan</string>
+    <string name="nav_features">Fitur</string>
+    <string name="nav_profile">Profil</string>
+
     <string name="btn_explore">EXPLORE LAYANAN</string>
     <string name="btn_website">KUNJUNGI WEBSITE</string>
     <string name="btn_calculator">KALKULATOR BIAYA LAUNDRY</string>
@@ -27,6 +32,27 @@
     <string name="service_tracking_desc">Pantau proses laundry secara riil dari Penerimaan, Pencucian, Pengeringan, Setrika, hingga Siap Ambil.</string>
     <string name="service_pos_title">3. Manajemen Kasir &amp; Nota</string>
     <string name="service_pos_desc">Cetak nota digital atau struk thermal untuk pelanggan dengan rincian biaya transparan.</string>
+
+    <string name="sub_frag_title">Modul Sub-Fragment Qcuci</string>
+    <string name="sub_frag_desc">Pilih tombol di bawah untuk berpindah antar 3 Sub-Fragment:</string>
+    <string name="btn_sub_kiloan">1. Cuci Kiloan</string>
+    <string name="btn_sub_satuan">2. Dry Clean</string>
+    <string name="btn_sub_tracking">3. Lacak Order</string>
+
+    <string name="sub_kiloan_title">Sub-Fragment 1: Paket Cuci Kiloan</string>
+    <string name="sub_kiloan_desc">Layanan cuci harian baju kiloan hemat dengan jaminan kebersihan, keharuman, dan kerapihan lipatan.</string>
+    <string name="rate_kiloan_title">Tarif Kiloan:</string>
+    <string name="rate_kiloan_list">• Reguler (2 Hari): Rp 6.000 / kg\n• Express (1 Hari): Rp 10.000 / kg\n• Kilat (6 Jam): Rp 15.000 / kg</string>
+
+    <string name="sub_satuan_title">Sub-Fragment 2: Dry Clean &amp; Satuan</string>
+    <string name="sub_satuan_desc">Perawatan khusus pakaian berharga seperti Jas, Gaun, Jaket Kulit, Bedcover, dan Sepatu.</string>
+    <string name="rate_satuan_title">Tarif Satuan &amp; Dry Clean:</string>
+    <string name="rate_satuan_list">• Jas / Blazer: Rp 20.000 / pcs\n• Gaun / Dress: Rp 25.000 / pcs\n• Bedcover Large: Rp 30.000 / pcs\n• Sepatu / Sneaker: Rp 35.000 / pasang</string>
+
+    <string name="sub_tracking_title">Sub-Fragment 3: Status Tracking Order</string>
+    <string name="sub_tracking_desc">Pantau tahapan pencucian secara langsung dari Penerimaan hingga Siap Ambil.</string>
+    <string name="tracking_order_id">Nomor Nota: #QC-88921 (Selesai)</string>
+    <string name="tracking_timeline">✔ [10:00] Penerimaan Nota &amp; Penimbangan\n✔ [11:30] Proses Pencucian &amp; Pembilasan\n✔ [13:00] Pengeringan Oven Suhu Stabil\n✔ [15:00] Setrika Uap &amp; Quality Control\n✔ [16:00] Siap Diambil Pelanggan</string>
 
     <string name="calc_choose_service">Pilih Jenis Layanan:</string>
     <string name="service_reguler">Cuci Kiloan Reguler (Rp 6.000 / kg)</string>
