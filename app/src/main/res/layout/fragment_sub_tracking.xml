@@ -43,7 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="12dp"
-                app:cardBackgroundColor="@color/qcuci_teal_light">
+                app:cardBackgroundColor="@color/qcuci_teal_light"
+                android:layout_marginBottom="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -71,6 +72,21 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTrackingRating"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/btn_rating"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/qcuci_gold"
+                app:icon="@android:drawable/btn_star_big_on"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:iconTint="@color/white" />
 
         </LinearLayout>
 

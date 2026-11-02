@@ -41,6 +41,11 @@
             android:label="@string/title_calculator" />
 
         <activity
+            android:name=".RatingActivity"
+            android:exported="false"
+            android:label="@string/title_rating" />
+
+        <activity
             android:name=".DeveloperActivity"
             android:exported="false"
             android:label="@string/title_developer" />

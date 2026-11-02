@@ -7,6 +7,7 @@
     <string name="title_calculator">Kalkulator Biaya Laundry</string>
     <string name="title_login">Login Qcuci</string>
     <string name="title_developer">Profil Developer</string>
+    <string name="title_rating">Rating &amp; Ulasan Layanan</string>
 
     <string name="nav_home">Beranda</string>
     <string name="nav_services">Layanan</string>
@@ -17,9 +18,11 @@
     <string name="btn_website">KUNJUNGI WEBSITE</string>
     <string name="btn_calculator">KALKULATOR BIAYA LAUNDRY</string>
     <string name="btn_developer">PROFIL DEVELOPER</string>
+    <string name="btn_rating">BERI RATING &amp; ULASAN</string>
     <string name="btn_logout">LOGOUT / KELUAR</string>
 
     <string name="desc_logo">Logo Qcuci Management</string>
+    <string name="desc_avatar">Foto / Ikon User</string>
     <string name="brand_qcuci">qcuci MANAGEMENT</string>
     <string name="tagline_qcuci">Smart Laundry System</string>
     <string name="desc_main">Aplikasi pengelolaan laundry modern untuk manajemen transaksi cuci kiloan &amp; satuan, pemantauan status cuci, dan manajemen pelanggan secara efisien.</string>
@@ -53,6 +56,15 @@
     <string name="sub_tracking_desc">Pantau tahapan pencucian secara langsung dari Penerimaan hingga Siap Ambil.</string>
     <string name="tracking_order_id">Nomor Nota: #QC-88921 (Selesai)</string>
     <string name="tracking_timeline">✔ [10:00] Penerimaan Nota &amp; Penimbangan\n✔ [11:30] Proses Pencucian &amp; Pembilasan\n✔ [13:00] Pengeringan Oven Suhu Stabil\n✔ [15:00] Setrika Uap &amp; Quality Control\n✔ [16:00] Siap Diambil Pelanggan</string>
+
+    <string name="rating_header">Beri Penilaian Layanan Qcuci</string>
+    <string name="rating_give_star">Pilih Rating Bintang (1 &#8211; 5):</string>
+    <string name="rating_hint_comment">Tuliskan komentar &amp; ulasan masukan Anda&#8230;</string>
+    <string name="btn_submit_review">KIRIM ULASAN</string>
+    <string name="rating_history_header">Daftar Ulasan Pelanggan</string>
+    <string name="rating_validation_empty">Silakan berikan rating bintang (minimal 1) terlebih dahulu!</string>
+    <string name="rating_success">Ulasan berhasil disimpan! Terima kasih atas masukan Anda.</string>
+    <string name="star_rating_format">★ %.1f</string>
 
     <string name="calc_choose_service">Pilih Jenis Layanan:</string>
     <string name="service_reguler">Cuci Kiloan Reguler (Rp 6.000 / kg)</string>

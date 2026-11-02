@@ -208,6 +208,23 @@
 
     </com.google.android.material.card.MaterialCardView>
 
+    <!-- Rating Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRating"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/btn_rating"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/qcuci_gold"
+        app:icon="@android:drawable/btn_star_big_on"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTint="@color/white"
+        android:layout_marginBottom="12dp" />
+
     <!-- Logout Button -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogout"

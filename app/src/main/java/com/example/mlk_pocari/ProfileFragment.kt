@@ -26,7 +26,14 @@ class ProfileFragment : Fragment() {
 
         prefManager = PrefManager(requireContext())
 
+        val btnRating = view.findViewById<Button>(R.id.btnRating)
         val btnLogout = view.findViewById<Button>(R.id.btnLogout)
+
+        btnRating.setOnClickListener {
+            val intent = Intent(requireContext(), RatingActivity::class.java)
+            startActivity(intent)
+        }
+
         btnLogout.setOnClickListener {
             prefManager.logout()
             Toast.makeText(requireContext(), "Berhasil logout", Toast.LENGTH_SHORT).show()
