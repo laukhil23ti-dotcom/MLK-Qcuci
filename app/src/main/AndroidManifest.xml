@@ -21,6 +21,11 @@
         </activity>
 
         <activity
+            android:name=".OnboardingActivity"
+            android:exported="false"
+            android:label="@string/title_onboarding" />
+
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:label="@string/title_login" />
@@ -29,6 +34,11 @@
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/title_main" />
+
+        <activity
+            android:name=".OrderHistoryActivity"
+            android:exported="false"
+            android:label="@string/title_history" />
 
         <activity
             android:name=".DetailActivity"

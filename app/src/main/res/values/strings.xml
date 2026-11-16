@@ -8,6 +8,8 @@
     <string name="title_login">Login Qcuci</string>
     <string name="title_developer">Profil Developer</string>
     <string name="title_rating">Rating &amp; Ulasan Layanan</string>
+    <string name="title_onboarding">Perkenalan Qcuci</string>
+    <string name="title_history">Riwayat Transaksi Laundry</string>
 
     <string name="nav_home">Beranda</string>
     <string name="nav_services">Layanan</string>
@@ -20,6 +22,9 @@
     <string name="btn_developer">PROFIL DEVELOPER</string>
     <string name="btn_rating">BERI RATING &amp; ULASAN</string>
     <string name="btn_logout">LOGOUT / KELUAR</string>
+    <string name="btn_skip">LEWATI</string>
+    <string name="btn_next">LANJUT</string>
+    <string name="btn_get_started">MULAI SEKARANG</string>
 
     <string name="desc_logo">Logo Qcuci Management</string>
     <string name="desc_avatar">Foto / Ikon User</string>
@@ -27,6 +32,21 @@
     <string name="tagline_qcuci">Smart Laundry System</string>
     <string name="desc_main">Aplikasi pengelolaan laundry modern untuk manajemen transaksi cuci kiloan &amp; satuan, pemantauan status cuci, dan manajemen pelanggan secara efisien.</string>
     <string name="footer_qcuci">qcuci Management • 2026</string>
+
+    <string name="grid_title">Menu Layanan Utama</string>
+    <string name="menu_kiloan">Laundry Kiloan</string>
+    <string name="menu_satuan">Laundry Satuan</string>
+    <string name="menu_tracking">Tracking Pesanan</string>
+    <string name="menu_history">Riwayat Pesanan</string>
+    <string name="menu_info">Informasi Layanan</string>
+    <string name="menu_profile">Profil Developer</string>
+
+    <string name="onboarding_title_1">Selamat Datang di Qcuci</string>
+    <string name="onboarding_desc_1">Solusi cerdas manajemen laundry modern dengan layanan cepat, bersih, wangi, dan rapi.</string>
+    <string name="onboarding_title_2">Kemudahan Memilih Layanan</string>
+    <string name="onboarding_desc_2">Pilih paket Cuci Kiloan, Satuan, Dry Clean, atau Bedcover dengan penimbangan dan tarif transparan.</string>
+    <string name="onboarding_title_3">Lacak Pesanan Real-Time</string>
+    <string name="onboarding_desc_3">Pantau tahapan status cuci dari Penerimaan hingga Siap Diambil secara langsung kapan saja.</string>
 
     <string name="header_services">Layanan &amp; Fitur Unggulan</string>
     <string name="service_kiloan_title">1. Cuci Kiloan &amp; Satuan</string>

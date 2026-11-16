@@ -44,24 +44,26 @@ class OnboardingActivity : AppCompatActivity() {
         val adapter = OnboardingAdapter(onboardingList)
         viewPager.adapter = adapter
 
-        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-                if (position == onboardingList.size - 1) {
-                    btnNext.text = getString(R.string.btn_get_started)
-                } else {
-                    btnNext.text = getString(R.string.btn_next)
+        viewPager.registerOnPageChangeCallback(
+            object : ViewPager2.OnPageChangeCallback() {
+                override fun onPageSelected(position: Int) {
+                    super.onPageSelected(position)
+                    if (position == (onboardingList.size - 1)) {
+                        btnNext.text = getString(R.string.btn_get_started)
+                    } else {
+                        btnNext.text = getString(R.string.btn_next)
+                    }
                 }
-            }
-        })
+            },
+        )
 
         btnSkip.setOnClickListener {
             finishOnboarding()
         }
 
         btnNext.setOnClickListener {
-            if (viewPager.currentItem < onboardingList.size - 1) {
-                viewPager.currentItem = viewPager.currentItem + 1
+            if (viewPager.currentItem < (onboardingList.size - 1)) {
+                viewPager.currentItem += 1
             } else {
                 finishOnboarding()
             }

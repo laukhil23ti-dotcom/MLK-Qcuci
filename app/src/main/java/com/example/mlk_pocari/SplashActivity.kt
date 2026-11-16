@@ -18,13 +18,13 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed(
             {
-                if (prefManager.isLoggedIn) {
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
-                } else {
-                    val intent = Intent(this, LoginActivity::class.java)
-                    startActivity(intent)
+                val targetActivity = when {
+                    !prefManager.isOnboardingCompleted -> OnboardingActivity::class.java
+                    prefManager.isLoggedIn -> MainActivity::class.java
+                    else -> LoginActivity::class.java
                 }
+                val intent = Intent(this, targetActivity)
+                startActivity(intent)
                 finish()
             },
             SPLASH_DELAY_MS,

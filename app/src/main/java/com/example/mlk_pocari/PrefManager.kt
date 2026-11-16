@@ -21,13 +21,22 @@ class PrefManager(context: Context) {
             pref.edit { putString(KEY_USERNAME, value) }
         }
 
+    var isOnboardingCompleted: Boolean
+        get() = pref.getBoolean(KEY_ONBOARDING_COMPLETED, false)
+        set(value) {
+            pref.edit { putBoolean(KEY_ONBOARDING_COMPLETED, value) }
+        }
+
     fun logout() {
+        val onboardingDone = isOnboardingCompleted
         pref.edit { clear() }
+        isOnboardingCompleted = onboardingDone
     }
 
     companion object {
         private const val PREF_NAME = "QcuciSessionPref"
         private const val KEY_IS_LOGIN = "isLogin"
         private const val KEY_USERNAME = "username"
+        private const val KEY_ONBOARDING_COMPLETED = "onboarding_completed"
     }
 }
