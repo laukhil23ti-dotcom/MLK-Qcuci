@@ -6,6 +6,7 @@
     <string name="title_web">Website Qcuci</string>
     <string name="title_calculator">Kalkulator Biaya Laundry</string>
     <string name="title_login">Login Qcuci</string>
+    <string name="title_register">Daftar Akun Qcuci</string>
     <string name="title_developer">Profil Developer</string>
     <string name="title_rating">Rating &amp; Ulasan Layanan</string>
     <string name="title_onboarding">Perkenalan Qcuci</string>
@@ -28,6 +29,12 @@
 
     <string name="desc_logo">Logo Qcuci Management</string>
     <string name="desc_avatar">Foto / Ikon User</string>
+    <string name="desc_add_order">Tambah Pesanan Baru</string>
+    <string name="empty_orders">Belum ada riwayat pesanan.</string>
+    <string name="hint_dialog_service">Nama Layanan (e.g. Cuci Kiloan)</string>
+    <string name="hint_dialog_weight">Berat / Qty (e.g. 4.5 kg)</string>
+    <string name="hint_dialog_price">Total Harga dalam Rp (e.g. 35000)</string>
+    <string name="hint_dialog_status">Status (e.g. Diproses / Selesai)</string>
     <string name="brand_qcuci">qcuci MANAGEMENT</string>
     <string name="tagline_qcuci">Smart Laundry System</string>
     <string name="desc_main">Aplikasi pengelolaan laundry modern untuk manajemen transaksi cuci kiloan &amp; satuan, pemantauan status cuci, dan manajemen pelanggan secara efisien.</string>
@@ -107,12 +114,26 @@
 
     <string name="login_header">Selamat Datang di Qcuci</string>
     <string name="login_subtitle">Silahkan masuk untuk mengelola sistem laundry</string>
-    <string name="hint_username">Username / Email</string>
+    <string name="hint_username">Username</string>
     <string name="hint_password">Password</string>
     <string name="btn_login">MASUK / LOGIN</string>
     <string name="login_failed">Username atau Password salah!</string>
     <string name="login_empty">Username dan Password wajib diisi!</string>
     <string name="login_demo_hint">Demo Akun: admin / admin123</string>
+
+    <string name="register_header">Buat Akun Baru</string>
+    <string name="register_subtitle">Daftar untuk menikmati layanan Qcuci</string>
+    <string name="hint_email">Alamat Email</string>
+    <string name="hint_confirm_password">Konfirmasi Password</string>
+    <string name="btn_register">DAFTAR AKUN</string>
+    <string name="link_to_register">Belum punya akun? Daftar disini</string>
+    <string name="link_to_login">Sudah punya akun? Login disini</string>
+    <string name="register_empty">Semua kolom wajib diisi!</string>
+    <string name="register_invalid_email">Format email tidak valid!</string>
+    <string name="register_short_password">Password minimal 6 karakter!</string>
+    <string name="register_password_mismatch">Konfirmasi password tidak cocok!</string>
+    <string name="register_username_exists">Username sudah digunakan oleh akun lain!</string>
+    <string name="register_success">Pendaftaran berhasil! Silakan login.</string>
 
     <string name="dev_title_val">Android Software Engineer</string>
     <string name="dev_name_label">Nama Lengkap:</string>

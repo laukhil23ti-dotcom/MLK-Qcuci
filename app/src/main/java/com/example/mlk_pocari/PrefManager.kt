@@ -21,6 +21,12 @@ class PrefManager(context: Context) {
             pref.edit { putString(KEY_USERNAME, value) }
         }
 
+    var userId: Long
+        get() = pref.getLong(KEY_USER_ID, -1L)
+        set(value) {
+            pref.edit { putLong(KEY_USER_ID, value) }
+        }
+
     var isOnboardingCompleted: Boolean
         get() = pref.getBoolean(KEY_ONBOARDING_COMPLETED, false)
         set(value) {
@@ -37,6 +43,7 @@ class PrefManager(context: Context) {
         private const val PREF_NAME = "QcuciSessionPref"
         private const val KEY_IS_LOGIN = "isLogin"
         private const val KEY_USERNAME = "username"
+        private const val KEY_USER_ID = "user_id"
         private const val KEY_ONBOARDING_COMPLETED = "onboarding_completed"
     }
 }

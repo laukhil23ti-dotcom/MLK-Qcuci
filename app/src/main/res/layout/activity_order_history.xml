@@ -25,6 +25,24 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <ProgressBar
+        android:id="@+id/progressBarOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/qcuci_teal_primary"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvEmptyOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/empty_orders"
+        android:textColor="@color/qcuci_text_secondary"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
     <!-- RecyclerView for Order History -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvOrderHistory"
@@ -33,5 +51,17 @@
         android:padding="20dp"
         android:clipToPadding="false"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!-- Floating Action Button to Add Order -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/white"
+        app:backgroundTint="@color/qcuci_teal_primary"
+        android:contentDescription="@string/desc_add_order" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

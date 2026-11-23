@@ -31,6 +31,11 @@
             android:label="@string/title_login" />
 
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_register" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/title_main" />

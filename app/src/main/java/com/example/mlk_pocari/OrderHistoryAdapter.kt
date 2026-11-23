@@ -5,10 +5,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mlk_pocari.data.model.OrderData
 
 class OrderHistoryAdapter(
-    private val orders: List<OrderModel>,
-    private val onItemClick: ((OrderModel) -> Unit)? = null,
+    private val orders: List<OrderData>,
+    private val onItemClick: ((OrderData) -> Unit)? = null,
+    private val onItemLongClick: ((OrderData) -> Unit)? = null,
 ) : RecyclerView.Adapter<OrderHistoryAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -28,15 +30,20 @@ class OrderHistoryAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = orders[position]
-        holder.tvOrderId.text = item.orderId
+        holder.tvOrderId.text = item.id?.let { "#QC-$it" } ?: "#QC-NEW"
         holder.tvOrderStatus.text = item.status
         holder.tvServiceName.text = item.serviceName
-        holder.tvOrderWeight.text = item.weightOrQty
-        holder.tvOrderDate.text = item.date
-        holder.tvOrderPrice.text = item.totalPrice
+        holder.tvOrderWeight.text = item.weightQty
+        holder.tvOrderDate.text = item.createdAt?.take(10) ?: "Hari ini"
+        holder.tvOrderPrice.text = "Rp ${item.totalPrice}"
 
         holder.itemView.setOnClickListener {
             onItemClick?.invoke(item)
+        }
+
+        holder.itemView.setOnLongClickListener {
+            onItemLongClick?.invoke(item)
+            true
         }
     }
 
